@@ -1,0 +1,69 @@
+//variables
+$color-text-primary: #fff;
+
+.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 75%;
+    margin: 0 auto;
+    z-index: 2;
+
+    &.top {
+        top: 5%;
+    }
+
+    &.bottom {
+        bottom: 20%;
+
+        span {
+            color: $color-text-primary;
+            text-align: justify;
+            text-indent: 5px;
+            font-size: 9pt;
+        }
+    }
+}
+
+ion-slides {
+    height: 100%;
+
+    .slide-inner {
+        width: 90%;
+        background: #0d77bdb9;
+        border-radius: 20px;
+
+        span {
+            color: $color-text-primary;
+            font-weight: bold;
+        }
+
+        ion-item {
+            --border-radius: 10px;
+            --background: rgba(255, 255, 255, 0.781);
+        }
+
+    }
+}
+
+.ocean {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    background: #3c9ddc;
+    
+    .waves {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-image: url('../../../assets/img/waves.png');
+        background-size: contain;
+        transition: all 0.5s;
+    }
+
+    
+}
